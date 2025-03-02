@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev-Board</title>
+    <!-- Tailwind CND -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Fond link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Style -->
+    <style>
+        .work-sans {
+            font-family: "Work Sans", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="work-sans bg-slate-300 m-15">
+    <header>
+        <nav class="bg-white p-3 rounded-xl flex justify-between">
+            <div class="flex gap-2">
+                <img src="assets/logo.png">
+                <h1 class="text-2xl mt-2">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <div class="flex gap-5 mt-2">
+                <div class="flex p-3 gap-1 bg-slate-100 rounded-xl w-19 h-10 ">
+                    <img src="assets/checkbox.png" class="h-5 w-5 mt-0.5">
+                    <h3 class="text-xl font-semibold" id="number2">23</h3>
+                </div>
+                <div class="">
+                    <a href="" id="rgb-btn" onclick="clourChange()"><img src="assets/theme-btn.png"
+                            class="h-8 mt-1"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-white rounded-xl p-4 mt-5 flex justify-center items-center gap-5 h-[1200px] ">
+            <div class="w-[80%]  h-full">
+                <div class="flex justify-center items-center  gap-4 my-8">
+                    <div class=" bg-blue-50 w-[30%] rounded-xl p-7">
+                        <div class="flex items-center justify-between ">
+                            <img src="assets/checkbox.png" class="bg-white p-2 rounded-full">
+                            <div>
+                                <p class="font-semibold">Task Assigned</p>
+                                <h1 class="text-2xl font-bold" id="number">06</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-linear-to-r from-cyan-500 to-blue-500 p-4 rounded-xl w-[50%] cursor-pointer"
+                        id="blog-btn">
+                        <div class="flex gap-3 items-center">
+                            <img src="assets/board.png" alt="">
+                            <h1 class="text-[24px] text-white">Discover Something New Today!</h1>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-7 w-[30%]">
+                        <div class="flex items-center gap-8">
+                            <div class="bg-white p-2 rounded-full">
+                                <img src="assets/calender.png" class="">
+                            </div>
+
+                            <p class="text-xl">Wed, <br><span class="font-bold">Jul 28 2025</span></p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" grid grid-cols-3 gap-6 ">
+                    <div class="bg-blue-50 p-6 rounded-lg  flex card flex-col items-start gap-6 justify-center ">
+                        <p class="bg-white p-3 rounded-lg  text-xl">SopEase</p>
+                        <h2 class="text-3xl font-semibold">Fix Mobile Button Issue </h2>
+                        <div class="bg-white rounded-lg p-3 w-full  ">
+                            <p class="text-xl text-gray-400 ">Debug using Chrome DevTools, check for
+
+                            </p>
+                        </div>
+                        <div class="border-1 border-dotted my-4 border-gray-300 w-full">
+
+                        </div>
+                        <div class="flex justify-between items-center  mt-2 w-full ">
+                            <div>
+                                <p>Deadline</p>
+                                <h2 class="font-bold">21March 2025</h2>
+                            </div>
+
+                            <div class="Button">
+                                <button 
+                                    class=" cursor-pointer Button  bg-blue-700 rounded-xl  text-white px-6 py-2"
+                                    id="Com-btn">
+                                    completed
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="bg-blue-50 p-6 rounded-lg  flex card flex-col items-start gap-6 justify-center ">
+                        <p class="bg-white p-3 rounded-lg  text-xl">CloudSync</p>
+                        <h2 class="text-3xl font-semibold">Add Dark Mode fixt reesd </h2>
+                        <div class="bg-white rounded-lg p-3 w-full  ">
+                            <p class="text-xl text-gray-400 ">Store the user's preference in localStorage,
+
+                            </p>
+                        </div>
+                        <div class="border-1 border-dotted my-4 border-gray-300 w-full">
+
+                        </div>
+                        <div class="flex justify-between items-center  mt-2 w-full">
+                            <div>
+                                <p>Deadline</p>
+                                <h2 class="font-bold">21March 2025</h2>
+                            </div>
+
+                            <div class="">
+                                <button class="Button bg-blue-700 rounded-xl text-xl text-white px-6 py-2 "
+                                    id="Com-btn2">
+                                    completed
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="bg-blue-50 p-6 rounded-lg  card flex flex-col items-start gap-6 justify-center ">
+                        <p class="bg-white p-3 rounded-lg  text-xl">SwiftPay</p>
+                        <h2 class="text-3xl font-semibold">Optimize Home page </h2>
+                        <div class="bg-white rounded-lg p-3 w-full  ">
+                            <p class="text-xl text-gray-400 ">Debug using Chrome DevTools, check for overlapping
+
+                            </p>
+                        </div>
+                        <div class="border-1 border-dotted my-4 border-gray-300 w-full">
+
+                        </div>
+                        <div class="flex justify-between items-center  mt-2 w-full">
+                            <div>
+                                <p>Deadline</p>
+                                <h2 class="font-bold">21March 2025</h2>
+                            </div>
+
+                            <div class="">
+                                <button class="Button bg-blue-700 rounded-xl text-xl text-white px-6 py-2 ">
+                                    completed
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="bg-blue-50 p-6 rounded-lg  card flex flex-col items-start gap-6 justify-center ">
+                        <p class="bg-white p-3 rounded-lg  text-xl">Meta</p>
+                        <h2 class="text-3xl font-semibold">Add new emoji 🤲 </h2>
+                        <div class="bg-white rounded-lg p-3 w-full  ">
+                            <p class="text-xl text-gray-400 ">Debug using Chrome DevTools, check for overlapping
+
+                            </p>
+                        </div>
+                        <div class="border-1 border-dotted my-4 border-gray-300 w-full">
+
+                        </div>
+                        <div class="flex justify-between items-center  mt-2 w-full">
+                            <div>
+                                <p>Deadline</p>
+                                <h2 class="font-bold">21March 2025</h2>
+                            </div>
+
+                            <div class="">
+                                <button class="Button bg-blue-700 rounded-xl text-xl text-white px-6 py-2 ">
+                                    completed
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="bg-blue-50 p-6 rounded-lg card flex flex-col items-start gap-6 justify-center ">
+                        <p class="bg-white p-3 rounded-lg  text-xl">Google LLC</p>
+                        <h2 class="text-3xl font-semibold"> OpenAI API </h2>
+                        <div class="bg-white rounded-lg p-3 w-full  ">
+                            <p class="text-xl text-gray-400 ">Debug using Chrome DevTools, check for overlapping
+
+                            </p>
+                        </div>
+                        <div class="border-1 border-dotted my-4 border-gray-300 w-full">
+
+                        </div>
+                        <div class="flex justify-between items-center  mt-2 w-full">
+                            <div>
+                                <p>Deadline</p>
+                                <h2 class="font-bold">21March 2025</h2>
+                            </div>
+
+                            <div class="">
+                                <button class="Button bg-blue-700 rounded-xl text-xl text-white px-6 py-2 ">
+                                    completed
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="bg-blue-50 p-6 rounded-lg  card flex flex-col items-start gap-6 justify-center ">
+                        <p class="bg-white p-3 rounded-lg  text-xl">SopEase</p>
+                        <h2 class="text-3xl font-semibold"> Job searching </h2>
+                        <div class="bg-white rounded-lg p-3 w-full  ">
+                            <p class="text-xl text-gray-400 ">Debug using Chrome DevTools, check for overlapping
+
+                            </p>
+                        </div>
+                        <div class="border-1 border-dotted my-4 border-gray-300 w-full">
+
+                        </div>
+                        <div class="flex justify-between items-center  mt-2 w-full">
+                            <div>
+                                <p>Deadline</p>
+                                <h2 class="font-bold">21March 2025</h2>
+                            </div>
+
+                            <div class="">
+                                <button class="Button bg-blue-700 rounded-xl text-xl text-white px-6 py-2 ">
+                                    completed
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+            <div class="p-4 text-center shadow-xl w-[20%] h-full rounded-xl">
+                <div class="flex gap-1 items-center justify-center">
+                    <img src="assets/activity.png" alt="">
+                    <h2 class="text-xl">Activty Log</h2>
+                </div>
+                <button class="p-2  bg-blue-700 rounded-xl text-white mt-4 mb-4" id="clear-All">Clear History</button>
+                <hr>
+
+                <div class="p-3 bg-blue-50  rounded-lg mt-4 text-sm font-semibold text-left " id="title">
+                    
+                </div>
+                
+            </div>
+
+        </section>
+    </main>
+    <script src="main.js"></script>
+    <!-- <script src="main3.js"></script> -->
+</body>
+
+</html>
